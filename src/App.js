@@ -29,134 +29,128 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={iconLore} className="App-logo" alt="logo" />
-        <div>
-          <div style={{ display: "flex" }}>
-            <div className="background background-root">
-              <Lore
-                alt="Sharp axes icon"
-                src={iconSharpAxes}
-                title="Sharp Axes"
-              />
-            </div>
-            <div className="background background-branch">
-              <Lore
-                alt="Colonization icon"
-                src={iconColonization}
-                title="Colonization"
-              />
-              <Lore
-                alt="Eradication icon"
-                src={iconEradication}
-                title="Eradication"
-              />
-            </div>
-            <div className="background background-branch">
-              <Lore
-                alt="Recruitment icon"
-                src={iconRecruitment}
-                title="Recruitment"
-              />
-              <Lore alt="Medicine icon" src={iconMedicine} title="Medicine" />
-            </div>
-            <div className="background background-leaf">
-              <Lore
-                alt="Hearthstone icon"
-                src={iconHearthstone}
-                title="Hearthstone"
-              />
-              <Lore
-                alt="Shiny happy people icon"
-                src={iconShinyHappyPeople}
-                title="Shiny Happy People"
-              />
-            </div>
+      <h1>Northgard Lore Planner</h1>
+      <div>
+        <div style={{ display: "flex" }}>
+          <div className="background background-root">
+            <Lore
+              alt="Sharp axes icon"
+              src={iconSharpAxes}
+              title="Sharp Axes"
+            />
           </div>
-          <div style={{ display: "flex" }}>
-            <div className="background background-root">
-              <Lore
-                alt="Weaponsmith icon"
-                src={iconWeaponsmith}
-                title="Weaponsmith"
-              />
-            </div>
-            <div className="background background-branch">
-              <Lore alt="Fur coats icon" src={iconFurCoats} title="Fur Coats" />
-              <Lore
-                alt="Defensive strategy icon"
-                src={iconDefensiveStrategy}
-                title="Defensive Strategy"
-              />
-            </div>
-            <div className="background background-branch">
-              <Lore
-                alt="Military strategy icon"
-                src={iconMilitaryStrategy}
-                title="Military Strategy "
-              />
-              <Lore
-                alt="Feeling safe icon"
-                src={iconFeelingSafe}
-                title="Feeling Safe"
-              />
-            </div>
-            <div className="background background-leaf">
-              <Lore
-                alt="Legendary heroes icon"
-                src={iconLegendaryHeroes}
-                title="Legendary Heroes"
-              />
-              <Lore
-                alt="Monster slayer icon"
-                src={iconMonsterSlayer}
-                title="Monster Slayer "
-              />
-            </div>
+          <div className="background background-branch">
+            <Lore
+              alt="Colonization icon"
+              src={iconColonization}
+              title="Colonization"
+            />
+            <Lore
+              alt="Eradication icon"
+              src={iconEradication}
+              title="Eradication"
+            />
           </div>
-          <div style={{ display: "flex" }}>
-            <div className="background background-root">
-              <Lore
-                alt="Mining efficiency icon"
-                src={iconMiningEfficiency}
-                title="Mining Efficiency"
-              />
-            </div>
-            <div className="background background-branch">
-              <Lore
-                alt="Shipbuilding icon"
-                src={iconShipbuilding}
-                title="Shipbuilding"
-              />
-              <Lore alt="Coinage icon" src={iconCoinage} title="Coinage" />
-            </div>
-            <div className="background background-branch">
-              <Lore
-                alt="Erudition icon"
-                src={iconErudition}
-                title="Erudition"
-              />
-              <Lore
-                alt="Carpentry mastery icon"
-                src={iconCarpentryMastery}
-                title="Carpentry Mastery"
-              />
-            </div>
-            <div className="background background-leaf">
-              <Lore
-                alt="Negotiation icon"
-                src={iconNegotiation}
-                title="Negotiation"
-              />
-              <Lore
-                alt="Trading caravan icon"
-                src={iconTradingCaravan}
-                title="Trading Caravan"
-              />
-            </div>
+          <div className="background background-branch">
+            <Lore
+              alt="Recruitment icon"
+              src={iconRecruitment}
+              title="Recruitment"
+            />
+            <Lore alt="Medicine icon" src={iconMedicine} title="Medicine" />
+          </div>
+          <div className="background background-leaf">
+            <Lore
+              alt="Hearthstone icon"
+              src={iconHearthstone}
+              title="Hearthstone"
+            />
+            <Lore
+              alt="Shiny happy people icon"
+              src={iconShinyHappyPeople}
+              title="Shiny Happy People"
+            />
           </div>
         </div>
-      </header>
+        <div style={{ display: "flex" }}>
+          <div className="background background-root">
+            <Lore
+              alt="Weaponsmith icon"
+              src={iconWeaponsmith}
+              title="Weaponsmith"
+            />
+          </div>
+          <div className="background background-branch">
+            <Lore alt="Fur coats icon" src={iconFurCoats} title="Fur Coats" />
+            <Lore
+              alt="Defensive strategy icon"
+              src={iconDefensiveStrategy}
+              title="Defensive Strategy"
+            />
+          </div>
+          <div className="background background-branch">
+            <Lore
+              alt="Military strategy icon"
+              src={iconMilitaryStrategy}
+              title="Military Strategy "
+            />
+            <Lore
+              alt="Feeling safe icon"
+              src={iconFeelingSafe}
+              title="Feeling Safe"
+            />
+          </div>
+          <div className="background background-leaf">
+            <Lore
+              alt="Legendary heroes icon"
+              src={iconLegendaryHeroes}
+              title="Legendary Heroes"
+            />
+            <Lore
+              alt="Monster slayer icon"
+              src={iconMonsterSlayer}
+              title="Monster Slayer "
+            />
+          </div>
+        </div>
+        <div style={{ display: "flex" }}>
+          <div className="background background-root">
+            <Lore
+              alt="Mining efficiency icon"
+              src={iconMiningEfficiency}
+              title="Mining Efficiency"
+            />
+          </div>
+          <div className="background background-branch">
+            <Lore
+              alt="Shipbuilding icon"
+              src={iconShipbuilding}
+              title="Shipbuilding"
+            />
+            <Lore alt="Coinage icon" src={iconCoinage} title="Coinage" />
+          </div>
+          <div className="background background-branch">
+            <Lore alt="Erudition icon" src={iconErudition} title="Erudition" />
+            <Lore
+              alt="Carpentry mastery icon"
+              src={iconCarpentryMastery}
+              title="Carpentry Mastery"
+            />
+          </div>
+          <div className="background background-leaf">
+            <Lore
+              alt="Negotiation icon"
+              src={iconNegotiation}
+              title="Negotiation"
+            />
+            <Lore
+              alt="Trading caravan icon"
+              src={iconTradingCaravan}
+              title="Trading Caravan"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
