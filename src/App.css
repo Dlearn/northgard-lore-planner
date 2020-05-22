@@ -55,6 +55,16 @@
   background: url("./images/background/background-title.png") no-repeat;
 }
 
+.lore {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
 .title {
+  color: white;
   font-size: 0.8rem;
 }
