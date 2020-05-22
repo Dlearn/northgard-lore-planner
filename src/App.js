@@ -1,4 +1,5 @@
 import React from "react";
+import Lore from "./components/Lore";
 import iconLore from "./images/icon-lore.png";
 import iconSharpAxes from "./images/icon-common/sharp-axes.png";
 import "./App.css";
@@ -11,200 +12,137 @@ function App() {
         <div>
           <div style={{ display: "flex" }}>
             <div className="background background-root">
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="background-icon">
-                  <img alt="Sharp axes icon" src={iconSharpAxes} />
-                </div>
-                <div className="background-title">
-                  <span className="title">Sharp Axes</span>
-                </div>
-              </div>
+              <Lore
+                alt="Sharp axes icon"
+                src={iconSharpAxes}
+                title="Sharp Axes"
+              />
             </div>
             <div className="background background-branch">
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="background-icon">
-                  <img alt="Sharp axes icon" src={iconSharpAxes} />
-                </div>
-                <div className="background-title">
-                  <span className="title">Sharp Axes</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="background-icon">
-                  <img alt="Sharp axes icon" src={iconSharpAxes} />
-                </div>
-                <div className="background-title">
-                  <span className="title">Sharp Axes</span>
-                </div>
-              </div>
+              <Lore
+                alt="Sharp axes icon"
+                src={iconSharpAxes}
+                title="Sharp Axes"
+              />
+              <Lore
+                alt="Sharp axes icon"
+                src={iconSharpAxes}
+                title="Sharp Axes"
+              />
             </div>
             <div className="background background-branch">
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="background-icon">
-                  <img alt="Sharp axes icon" src={iconSharpAxes} />
-                </div>
-                <div className="background-title">
-                  <span className="title">Sharp Axes</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="background-icon">
-                  <img alt="Sharp axes icon" src={iconSharpAxes} />
-                </div>
-                <div className="background-title">
-                  <span className="title">Sharp Axes</span>
-                </div>
-              </div>
+              <Lore
+                alt="Sharp axes icon"
+                src={iconSharpAxes}
+                title="Sharp Axes"
+              />
+              <Lore
+                alt="Sharp axes icon"
+                src={iconSharpAxes}
+                title="Sharp Axes"
+              />
             </div>
             <div className="background background-leaf">
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="background-icon">
-                  <img alt="Sharp axes icon" src={iconSharpAxes} />
-                </div>
-                <div className="background-title">
-                  <span className="title">Sharp Axes</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="background-icon">
-                  <img alt="Sharp axes icon" src={iconSharpAxes} />
-                </div>
-                <div className="background-title">
-                  <span className="title">Sharp Axes</span>
-                </div>
-              </div>
+              <Lore
+                alt="Sharp axes icon"
+                src={iconSharpAxes}
+                title="Sharp Axes"
+              />
+              <Lore
+                alt="Sharp axes icon"
+                src={iconSharpAxes}
+                title="Sharp Axes"
+              />
             </div>
           </div>
           <div style={{ display: "flex" }}>
             <div className="background background-root">
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="background-icon">
-                  <img alt="Sharp axes icon" src={iconSharpAxes} />
-                </div>
-                <div className="background-title">
-                  <span className="title">Sharp Axes</span>
-                </div>
-              </div>
+              <Lore
+                alt="Sharp axes icon"
+                src={iconSharpAxes}
+                title="Sharp Axes"
+              />
             </div>
             <div className="background background-branch">
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="background-icon">
-                  <img alt="Sharp axes icon" src={iconSharpAxes} />
-                </div>
-                <div className="background-title">
-                  <span className="title">Sharp Axes</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="background-icon">
-                  <img alt="Sharp axes icon" src={iconSharpAxes} />
-                </div>
-                <div className="background-title">
-                  <span className="title">Sharp Axes</span>
-                </div>
-              </div>
+              <Lore
+                alt="Sharp axes icon"
+                src={iconSharpAxes}
+                title="Sharp Axes"
+              />
+              <Lore
+                alt="Sharp axes icon"
+                src={iconSharpAxes}
+                title="Sharp Axes"
+              />
             </div>
             <div className="background background-branch">
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="background-icon">
-                  <img alt="Sharp axes icon" src={iconSharpAxes} />
-                </div>
-                <div className="background-title">
-                  <span className="title">Sharp Axes</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="background-icon">
-                  <img alt="Sharp axes icon" src={iconSharpAxes} />
-                </div>
-                <div className="background-title">
-                  <span className="title">Sharp Axes</span>
-                </div>
-              </div>
+              <Lore
+                alt="Sharp axes icon"
+                src={iconSharpAxes}
+                title="Sharp Axes"
+              />
+              <Lore
+                alt="Sharp axes icon"
+                src={iconSharpAxes}
+                title="Sharp Axes"
+              />
             </div>
             <div className="background background-leaf">
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="background-icon">
-                  <img alt="Sharp axes icon" src={iconSharpAxes} />
-                </div>
-                <div className="background-title">
-                  <span className="title">Sharp Axes</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="background-icon">
-                  <img alt="Sharp axes icon" src={iconSharpAxes} />
-                </div>
-                <div className="background-title">
-                  <span className="title">Sharp Axes</span>
-                </div>
-              </div>
+              <Lore
+                alt="Sharp axes icon"
+                src={iconSharpAxes}
+                title="Sharp Axes"
+              />
+              <Lore
+                alt="Sharp axes icon"
+                src={iconSharpAxes}
+                title="Sharp Axes"
+              />
             </div>
           </div>
           <div style={{ display: "flex" }}>
             <div className="background background-root">
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="background-icon">
-                  <img alt="Sharp axes icon" src={iconSharpAxes} />
-                </div>
-                <div className="background-title">
-                  <span className="title">Sharp Axes</span>
-                </div>
-              </div>
+              <Lore
+                alt="Sharp axes icon"
+                src={iconSharpAxes}
+                title="Sharp Axes"
+              />
             </div>
             <div className="background background-branch">
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="background-icon">
-                  <img alt="Sharp axes icon" src={iconSharpAxes} />
-                </div>
-                <div className="background-title">
-                  <span className="title">Sharp Axes</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="background-icon">
-                  <img alt="Sharp axes icon" src={iconSharpAxes} />
-                </div>
-                <div className="background-title">
-                  <span className="title">Sharp Axes</span>
-                </div>
-              </div>
+              <Lore
+                alt="Sharp axes icon"
+                src={iconSharpAxes}
+                title="Sharp Axes"
+              />
+              <Lore
+                alt="Sharp axes icon"
+                src={iconSharpAxes}
+                title="Sharp Axes"
+              />
             </div>
             <div className="background background-branch">
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="background-icon">
-                  <img alt="Sharp axes icon" src={iconSharpAxes} />
-                </div>
-                <div className="background-title">
-                  <span className="title">Sharp Axes</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="background-icon">
-                  <img alt="Sharp axes icon" src={iconSharpAxes} />
-                </div>
-                <div className="background-title">
-                  <span className="title">Sharp Axes</span>
-                </div>
-              </div>
+              <Lore
+                alt="Sharp axes icon"
+                src={iconSharpAxes}
+                title="Sharp Axes"
+              />
+              <Lore
+                alt="Sharp axes icon"
+                src={iconSharpAxes}
+                title="Sharp Axes"
+              />
             </div>
             <div className="background background-leaf">
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="background-icon">
-                  <img alt="Sharp axes icon" src={iconSharpAxes} />
-                </div>
-                <div className="background-title">
-                  <span className="title">Sharp Axes</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="background-icon">
-                  <img alt="Sharp axes icon" src={iconSharpAxes} />
-                </div>
-                <div className="background-title">
-                  <span className="title">Sharp Axes</span>
-                </div>
-              </div>
+              <Lore
+                alt="Sharp axes icon"
+                src={iconSharpAxes}
+                title="Sharp Axes"
+              />
+              <Lore
+                alt="Sharp axes icon"
+                src={iconSharpAxes}
+                title="Sharp Axes"
+              />
             </div>
           </div>
         </div>

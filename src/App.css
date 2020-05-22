@@ -21,7 +21,7 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 266px;
   height: 140px;
   margin-left: -9px;
@@ -47,7 +47,11 @@
 }
 
 .background-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 151px;
+  height: 32px;
   background: url("./images/background/background-title.png") no-repeat;
 }
 
