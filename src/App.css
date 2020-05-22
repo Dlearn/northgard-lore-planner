@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,11 +17,40 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.background {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 266px;
+  height: 140px;
+  margin-left: -9px;
+}
+
+.background-root {
+  background-image: url("./images/background/background-root.png");
+}
+
+.background-branch {
+  background-image: url("./images/background/background-branch.png");
+}
+
+.background-leaf {
+  background-image: url("./images/background/background-leaf.png");
+}
+
+.background-icon {
+  width: 42px;
+  height: 42px;
+  padding: 3px;
+  background: url("./images/background/background-icon.png") no-repeat;
+}
+
+.background-title {
+  width: 151px;
+  background: url("./images/background/background-title.png") no-repeat;
+}
+
+.title {
+  font-size: 0.8rem;
 }
