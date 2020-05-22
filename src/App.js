@@ -29,7 +29,10 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1>Northgard Lore Planner</h1>
+      <h1>
+        <img alt="Icon lore" className="iconLore" src={iconLore} />
+        Northgard Lore Planner
+      </h1>
       <div>
         <div style={{ display: "flex" }}>
           <div className="background background-root">

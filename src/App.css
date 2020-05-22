@@ -9,6 +9,11 @@
   height: 100vh;
 }
 
+.iconLore {
+  width: 24px;
+  margin-right: 8px;
+}
+
 .background {
   display: flex;
   flex-flow: column nowrap;
