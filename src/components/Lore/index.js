@@ -3,6 +3,7 @@ import React from "react";
 import SelectedIcon from "../SelectedIcon";
 
 import countLoresInRow from "../../utils/countLoresInRow";
+import getPositionInSelectedLores from "../../utils/getPositionInSelectedLores";
 
 import "../../App.css";
 
@@ -18,8 +19,10 @@ function Lore(props) {
 
   const [row, col] = coordinatesRowCol;
   const count = countLoresInRow(selectedLores, row);
+  const position = getPositionInSelectedLores(selectedLores, coordinatesRowCol);
   const isUpperRow = row % 2 === 0;
   const selected = isUpperRow ? count > col : count >= col;
+  // const selected = position !== -1;
   const isLastSelected = isUpperRow
     ? selectedLores[selectedLores.length - 1] === row && count === col + 1
     : selectedLores[selectedLores.length - 1] === row && count === col;
@@ -46,7 +49,7 @@ function Lore(props) {
       <div className="background-title">
         <span className="title">{title}</span>
       </div>
-      {selected && <SelectedIcon number={1} />}
+      {selected && <SelectedIcon number={position} />}
     </button>
   );
 }
