@@ -1,6 +1,5 @@
 import React from "react";
 
-import Lore from "./components/Lore";
 import LoreRow from "./components/LoreRow";
 
 import loreStag from "./clans/0320-stag";
