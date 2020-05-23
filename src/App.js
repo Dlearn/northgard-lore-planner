@@ -12,7 +12,11 @@ function App() {
   useEffect(() => {
     const cleanedPathname = window.location.pathname.substr(1);
     const lores = cleanedPathname.match(/.{1,2}/g);
-    setSelectedLores(lores);
+    if (lores) {
+      setSelectedLores(lores);
+    } else {
+      setSelectedLores([]);
+    }
   }, []);
 
   const onDeselectLore = () => {
