@@ -2,9 +2,6 @@ import React from "react";
 
 import SelectedIcon from "../SelectedIcon";
 
-import checkUnselectedIsDisabled from "../../utils/checkUnselectedIsDisabled";
-import getPositionInSelectedLores from "../../utils/getPositionInSelectedLores";
-
 import "../../App.css";
 
 function Lore(props) {
