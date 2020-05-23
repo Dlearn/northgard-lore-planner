@@ -61,6 +61,10 @@
   border: none;
 }
 
+.lore:disabled {
+  cursor: not-allowed;
+}
+
 .title {
   color: white;
   font-size: 0.75rem;
