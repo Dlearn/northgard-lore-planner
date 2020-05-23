@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import LoreRow from "./components/LoreRow";
 
@@ -9,6 +9,11 @@ import "./App.css";
 
 function App() {
   const [selectedLores, setSelectedLores] = useState([]);
+  useEffect(() => {
+    const cleanedPathname = window.location.pathname.substr(1);
+    const lores = cleanedPathname.match(/.{1,2}/g);
+    setSelectedLores(lores);
+  }, []);
 
   const onDeselectLore = () => {
     const withoutLastLore = [...selectedLores];
@@ -50,6 +55,9 @@ function App() {
           selectedLores={selectedLores}
         />
       </div>
+      <a className="button" href={`/${selectedLores.join("")}`}>
+        Save
+      </a>
     </div>
   );
 }

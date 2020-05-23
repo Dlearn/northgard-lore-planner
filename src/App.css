@@ -85,3 +85,24 @@
 .selectedText {
   color: white;
 }
+
+.button {
+  appearance: button;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  padding: 8px 16px;
+  background-color: white;
+  border: solid 1px gray;
+  font-size: 16px;
+  border-radius: 4px;
+  color: black;
+  text-decoration: none;
+}
+
+/* .button:focus {
+  outline: none;
+} */
+
+.button:hover {
+  background-color: gray;
+}
