@@ -10,27 +10,25 @@ import "../../App.css";
 function Lore(props) {
   const {
     coordinatesRowCol,
+    enabled,
     onDeselectLore,
     onSelectLore,
+    positionInLores,
     selectedLores,
     src,
     title,
   } = props;
 
-  const row = coordinatesRowCol[0];
-  const position = getPositionInSelectedLores(selectedLores, coordinatesRowCol);
-  const selected = position !== -1;
-  const isLastSelected = position === selectedLores.length;
-
+  const selected = positionInLores !== -1;
   const disabled = selected
-    ? !isLastSelected
-    : checkUnselectedIsDisabled(selectedLores, coordinatesRowCol);
+    ? positionInLores + 1 !== selectedLores.length
+    : !enabled;
 
   const onClickLore = () => {
-    if (selected) {
-      onDeselectLore(row);
+    if (positionInLores !== -1) {
+      onDeselectLore();
     } else {
-      onSelectLore(row);
+      onSelectLore(coordinatesRowCol);
     }
   };
 
@@ -42,7 +40,7 @@ function Lore(props) {
       <div className="background-title">
         <span className="title">{title}</span>
       </div>
-      {selected && <SelectedIcon number={position} />}
+      {selected && <SelectedIcon number={positionInLores} />}
     </button>
   );
 }

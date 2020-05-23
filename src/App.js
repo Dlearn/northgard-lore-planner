@@ -8,18 +8,17 @@ import iconLore from "./images/icon-lore.png";
 import "./App.css";
 
 function App() {
-  const [selectedLores, setSelectedLores] = useState([0, 2, 4]);
+  const [selectedLores, setSelectedLores] = useState([]);
 
-  const onDeselectLore = (row) => {
-    if (selectedLores[selectedLores.length - 1] === row) {
-      const withoutLastLore = [...selectedLores];
-      withoutLastLore.pop();
-      setSelectedLores(withoutLastLore);
-    }
+  const onDeselectLore = () => {
+    const withoutLastLore = [...selectedLores];
+    withoutLastLore.pop();
+    setSelectedLores(withoutLastLore);
   };
 
-  const onSelectLore = (row) => {
-    setSelectedLores([...selectedLores, row]);
+  const onSelectLore = (coordinatesRowCol) => {
+    const [row, col] = coordinatesRowCol;
+    setSelectedLores([...selectedLores, `${row}${col}`]);
   };
 
   return (
