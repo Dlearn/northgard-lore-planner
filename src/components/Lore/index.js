@@ -21,11 +21,8 @@ function Lore(props) {
   const count = countLoresInRow(selectedLores, row);
   const position = getPositionInSelectedLores(selectedLores, coordinatesRowCol);
   const isUpperRow = row % 2 === 0;
-  const selected = isUpperRow ? count > col : count >= col;
-  // const selected = position !== -1;
-  const isLastSelected = isUpperRow
-    ? selectedLores[selectedLores.length - 1] === row && count === col + 1
-    : selectedLores[selectedLores.length - 1] === row && count === col;
+  const selected = position !== -1;
+  const isLastSelected = position === selectedLores.length;
 
   const disabled = selected
     ? !isLastSelected
