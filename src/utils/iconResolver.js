@@ -28,6 +28,13 @@ import iconHeroEmblem from "../images/icon-stag/hero-emblem.png";
 import iconTheValueOfGreatDeeds from "../images/icon-stag/the-value-of-great-deeds.png";
 import iconYoungAndProud from "../images/icon-stag/young-and-proud.png";
 
+// Goat
+import iconSpareTools from "../images/icon-goat/spare-tools.png";
+import iconAmenities from "../images/icon-goat/amenities.png";
+import iconIndustrious from "../images/icon-goat/industrious.png";
+import iconBarricades from "../images/icon-goat/barricades.png";
+import iconFoodTrade from "../images/icon-goat/food-trade.png";
+
 export default function iconResolver(name) {
   switch (name) {
     // Common
@@ -85,6 +92,18 @@ export default function iconResolver(name) {
       return iconTheValueOfGreatDeeds;
     case "Young And Proud":
       return iconYoungAndProud;
+
+    // Goat
+    case "Spare Tools":
+      return iconSpareTools;
+    case "Amenities":
+      return iconAmenities;
+    case "Industrious":
+      return iconIndustrious;
+    case "Barricades":
+      return iconBarricades;
+    case "Food Trade":
+      return iconFoodTrade;
     default:
       return null;
   }
