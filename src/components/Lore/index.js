@@ -2,7 +2,7 @@ import React from "react";
 
 import SelectedIcon from "../SelectedIcon";
 
-import countLoresInRow from "../../utils/countLoresInRow";
+import checkUnselectedIsDisabled from "../../utils/checkUnselectedIsDisabled";
 import getPositionInSelectedLores from "../../utils/getPositionInSelectedLores";
 
 import "../../App.css";
@@ -17,18 +17,14 @@ function Lore(props) {
     title,
   } = props;
 
-  const [row, col] = coordinatesRowCol;
-  const count = countLoresInRow(selectedLores, row);
+  const row = coordinatesRowCol[0];
   const position = getPositionInSelectedLores(selectedLores, coordinatesRowCol);
-  const isUpperRow = row % 2 === 0;
   const selected = position !== -1;
   const isLastSelected = position === selectedLores.length;
 
   const disabled = selected
     ? !isLastSelected
-    : isUpperRow
-    ? col > count
-    : col > count + 1;
+    : checkUnselectedIsDisabled(selectedLores, coordinatesRowCol);
 
   const onClickLore = () => {
     if (selected) {
