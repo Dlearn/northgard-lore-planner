@@ -65,12 +65,40 @@ import iconBartering from "../images/icon-boar/bartering.png";
 import iconHandiwork from "../images/icon-boar/handiwork.png";
 import iconOsmosis from "../images/icon-boar/osmosis.png";
 
-// Next
-// import icon from "../images/icon-/.png";
-// import icon from "../images/icon-/.png";
-// import icon from "../images/icon-/.png";
-// import icon from "../images/icon-/.png";
-// import icon from "../images/icon-/.png";
+// Snake
+import iconStolenLore from "../images/icon-snake/stolen-lore.png";
+import iconUnderPressure from "../images/icon-snake/under-pressure.png";
+import iconGuerillaTactics from "../images/icon-snake/guerilla-tactics.png";
+import iconBlackMarket from "../images/icon-snake/black-market.png";
+import iconRapaciousExploitation from "../images/icon-snake/rapacious-exploitation.png";
+
+// Dragon
+import iconHardLabor from "../images/icon-dragon/hard-labor.png";
+import iconBloodSweatAndTears from "../images/icon-dragon/blood-sweat-and-tears.png";
+import iconDraconicFrenzy from "../images/icon-dragon/draconic-frenzy.png";
+import iconCapture from "../images/icon-dragon/capture.png";
+import iconSlaveTrade from "../images/icon-dragon/slave-trade.png";
+
+// Horse
+import iconAncestralInfluence from "../images/icon-horse/ancestral-influence.png";
+import iconGreatTower from "../images/icon-horse/great-tower.png";
+import iconMetalcraft from "../images/icon-horse/metalcraft.png";
+import iconExcavation from "../images/icon-horse/excavation.png";
+import iconQualityOfLife from "../images/icon-horse/quality-of-life.png";
+
+// Kraken
+import iconForesight from "../images/icon-kraken/foresight.png";
+import iconFreshFish from "../images/icon-kraken/fresh-fish.png";
+import iconEndlessTide from "../images/icon-kraken/endless-tide.png";
+import iconKnowledgeFromBeyond from "../images/icon-kraken/knowledge-from-beyond.png";
+import iconNearTheSeaSpirit from "../images/icon-kraken/near-the-sea-spirit.png";
+
+// Ox
+import iconCityBuilder from "../images/icon-ox/city-builder.png";
+import iconMilitaryTraining from "../images/icon-ox/military-training.png";
+import iconFerociousCharge from "../images/icon-ox/ferocious-charge.png";
+import iconUnstoppable from "../images/icon-ox/unstoppable.png";
+import iconWarcraft from "../images/icon-ox/warcraft.png";
 
 // Blessings
 import iconFreyasBlessing from "../images/icon-common/blessing-baldr.png";
@@ -198,6 +226,66 @@ export default function iconResolver(name) {
       return iconHandiwork;
     case "Osmosis":
       return iconOsmosis;
+
+    // Snake
+    case "Stolen Lore":
+      return iconStolenLore;
+    case "Under Pressure":
+      return iconUnderPressure;
+    case "Guerilla Tactics":
+      return iconGuerillaTactics;
+    case "Black Market":
+      return iconBlackMarket;
+    case "Rapacious Exploitation":
+      return iconRapaciousExploitation;
+
+    // Dragon
+    case "Hard Labor":
+      return iconHardLabor;
+    case "Blood, Sweat & Tears":
+      return iconBloodSweatAndTears;
+    case "Draconic Frenzy":
+      return iconDraconicFrenzy;
+    case "Capture":
+      return iconCapture;
+    case "Slave Trade":
+      return iconSlaveTrade;
+
+    // Horse
+    case "Ancestral Influence":
+      return iconAncestralInfluence;
+    case "Great Tower":
+      return iconGreatTower;
+    case "Metalcraft":
+      return iconMetalcraft;
+    case "Excavation":
+      return iconExcavation;
+    case "Quality Of Life":
+      return iconQualityOfLife;
+
+    // Kraken
+    case "Foresight":
+      return iconForesight;
+    case "Fresh Fish":
+      return iconFreshFish;
+    case "Endless Tide":
+      return iconEndlessTide;
+    case "Knowledge From Beyond":
+      return iconKnowledgeFromBeyond;
+    case "Near The Sea Spirit":
+      return iconNearTheSeaSpirit;
+
+    // Ox
+    case "City Builder":
+      return iconCityBuilder;
+    case "Military Training":
+      return iconMilitaryTraining;
+    case "Ferocious Charge":
+      return iconFerociousCharge;
+    case "Unstoppable":
+      return iconUnstoppable;
+    case "Warcraft":
+      return iconWarcraft;
 
     // Blessings
     case "Freya's Blessing":

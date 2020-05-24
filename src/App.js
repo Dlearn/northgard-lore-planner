@@ -10,11 +10,11 @@ import loreWolf from "./clans/0320-wolf";
 import loreRaven from "./clans/0320-raven";
 import loreBear from "./clans/0320-bear";
 import loreBoar from "./clans/0320-boar";
-// import loreSnake from "./clans/0320-snake";
-// import loreDragon from "./clans/0320-dragon";
-// import loreHorse from "./clans/0320-horse";
-// import loreKraken from "./clans/0320-kraken";
-// import loreOx from "./clans/0320-ox";
+import loreSnake from "./clans/0320-snake";
+import loreDragon from "./clans/0320-dragon";
+import loreHorse from "./clans/0320-horse";
+import loreKraken from "./clans/0320-kraken";
+import loreOx from "./clans/0320-ox";
 
 import iconLore from "./images/icon-lore.png";
 import "./App.css";
@@ -27,11 +27,11 @@ const CLANS = {
   Raven: loreRaven,
   Bear: loreBear,
   Boar: loreBoar,
-  // Snake: loreSnake,
-  // Dragon: loreDragon,
-  // Horse: loreHorse,
-  // Kraken: loreKraken,
-  // Ox: loreOx,
+  Snake: loreSnake,
+  Dragon: loreDragon,
+  Horse: loreHorse,
+  Kraken: loreKraken,
+  Ox: loreOx,
 };
 
 function App() {
@@ -75,7 +75,9 @@ function App() {
         value={selectedClan}
       >
         {Object.keys(CLANS).map((clan) => (
-          <option value={clan}>{clan}</option>
+          <option key={clan} value={clan}>
+            {clan}
+          </option>
         ))}
       </select>
       <div>
