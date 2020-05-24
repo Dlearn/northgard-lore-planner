@@ -2,6 +2,8 @@ import React from "react";
 
 import SelectedIcon from "../SelectedIcon";
 
+import iconResolver from "../../utils/iconResolver";
+
 import "../../App.css";
 
 function Lore(props) {
@@ -12,7 +14,6 @@ function Lore(props) {
     onSelectLore,
     positionInLores,
     selectedLores,
-    src,
     title,
   } = props;
 
@@ -32,7 +33,7 @@ function Lore(props) {
   return (
     <button className="lore" disabled={disabled} onClick={onClickLore}>
       <div className="background-icon">
-        <img alt={title} src={src} />
+        <img alt={title} src={iconResolver(title)} />
       </div>
       <div className="background-title">
         <span className="title">{title}</span>

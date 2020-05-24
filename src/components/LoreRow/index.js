@@ -2,8 +2,6 @@ import React from "react";
 
 import Lore from "../Lore";
 
-import iconResolver from "../../utils/iconResolver";
-
 import "../../App.css";
 
 function LoreRow(props) {
@@ -30,7 +28,6 @@ function LoreRow(props) {
           onSelectLore={onSelectLore}
           positionInLores={position0}
           selectedLores={selectedLores}
-          src={iconResolver(loreRow[0])}
           title={loreRow[0]}
         />
       </div>
@@ -42,7 +39,6 @@ function LoreRow(props) {
           onSelectLore={onSelectLore}
           positionInLores={position1}
           selectedLores={selectedLores}
-          src={iconResolver(loreRow[1])}
           title={loreRow[1]}
         />
         <Lore
@@ -52,7 +48,6 @@ function LoreRow(props) {
           onSelectLore={onSelectLore}
           positionInLores={position2}
           selectedLores={selectedLores}
-          src={iconResolver(loreRow[2])}
           title={loreRow[2]}
         />
       </div>
@@ -64,7 +59,6 @@ function LoreRow(props) {
           onSelectLore={onSelectLore}
           positionInLores={position3}
           selectedLores={selectedLores}
-          src={iconResolver(loreRow[3])}
           title={loreRow[3]}
         />
         <Lore
@@ -74,7 +68,6 @@ function LoreRow(props) {
           onSelectLore={onSelectLore}
           positionInLores={position4}
           selectedLores={selectedLores}
-          src={iconResolver(loreRow[4])}
           title={loreRow[4]}
         />
       </div>
@@ -86,7 +79,6 @@ function LoreRow(props) {
           onSelectLore={onSelectLore}
           positionInLores={position5}
           selectedLores={selectedLores}
-          src={iconResolver(loreRow[5])}
           title={loreRow[5]}
         />
         <Lore
@@ -96,7 +88,6 @@ function LoreRow(props) {
           onSelectLore={onSelectLore}
           positionInLores={position6}
           selectedLores={selectedLores}
-          src={iconResolver(loreRow[6])}
           title={loreRow[6]}
         />
       </div>
