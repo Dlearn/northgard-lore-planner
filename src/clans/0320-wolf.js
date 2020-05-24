@@ -11,7 +11,7 @@ export default [
   [
     "Weaponsmith",
     "Fur Coats",
-    "Spoils of War",
+    "Spoils Of War",
     "Military Strategy",
     "Plunder",
     "Legendary Heroes",
