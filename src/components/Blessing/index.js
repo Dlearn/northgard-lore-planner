@@ -38,7 +38,7 @@ function Blessing(props) {
       <div className="background-title">
         <span className="title">{title}</span>
       </div>
-      {selected && <SelectedIcon number={positionInLores} />}
+      {selected && <SelectedIcon number={positionInLores + 1} />}
     </button>
   );
 }
