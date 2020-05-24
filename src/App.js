@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+import BlessingRow from "./components/BlessingRow";
 import LoreRow from "./components/LoreRow";
 
 import loreCommon from "./clans/0320-common";
@@ -82,6 +83,11 @@ function App() {
           selectedLores={selectedLores}
         />
       </div>
+      <BlessingRow
+        onDeselectLore={onDeselectLore}
+        onSelectLore={onSelectLore}
+        selectedLores={selectedLores}
+      />
       <div style={{ display: "flex" }}>
         <a className="button" href={`/${selectedLores.join("")}`}>
           Save

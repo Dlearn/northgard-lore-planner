@@ -35,6 +35,11 @@ import iconIndustrious from "../images/icon-goat/industrious.png";
 import iconBarricades from "../images/icon-goat/barricades.png";
 import iconFoodTrade from "../images/icon-goat/food-trade.png";
 
+// Blessings
+import iconFreyasBlessing from "../images/icon-common/blessing-baldr.png";
+import iconBaldrsBlessing from "../images/icon-common/blessing-freya.png";
+import iconJordsBlessing from "../images/icon-common/blessing-jord.png";
+
 export default function iconResolver(name) {
   switch (name) {
     // Common
@@ -104,6 +109,14 @@ export default function iconResolver(name) {
       return iconBarricades;
     case "Food Trade":
       return iconFoodTrade;
+
+    // Blessings
+    case "Freya's Blessing":
+      return iconFreyasBlessing;
+    case "Baldr's Blessing":
+      return iconBaldrsBlessing;
+    case "Jord's Blessing":
+      return iconJordsBlessing;
     default:
       return null;
   }

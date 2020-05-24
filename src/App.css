@@ -8,6 +8,10 @@
   height: 100vh;
 }
 
+.body > * {
+  margin-bottom: 12px;
+}
+
 .iconLore {
   width: 24px;
   margin-right: 8px;
@@ -86,6 +90,19 @@
   color: white;
 }
 
+.blessingRow {
+  display: flex;
+}
+
+.blessingRow > * {
+  margin: 0 8px;
+}
+
+.iconBlessing {
+  width: 42px;
+  height: 42px;
+}
+
 .button {
   appearance: button;
   cursor: pointer;
@@ -99,7 +116,7 @@
   text-decoration: none;
   width: 80px;
   text-align: center;
-  margin: 8px;
+  margin: 0 8px;
 }
 
 .button:hover {
