@@ -82,9 +82,19 @@ function App() {
           selectedLores={selectedLores}
         />
       </div>
-      <a className="button" href={`/${selectedLores.join("")}`}>
-        Save
-      </a>
+      <div style={{ display: "flex" }}>
+        <a className="button" href={`/${selectedLores.join("")}`}>
+          Save
+        </a>
+        <button
+          className="button"
+          onClick={() => {
+            setSelectedLores([]);
+          }}
+        >
+          Reset
+        </button>
+      </div>
     </div>
   );
 }
