@@ -35,6 +35,43 @@ import iconIndustrious from "../images/icon-goat/industrious.png";
 import iconBarricades from "../images/icon-goat/barricades.png";
 import iconFoodTrade from "../images/icon-goat/food-trade.png";
 
+// Raven
+import iconRangers from "../images/icon-raven/rangers.png";
+import iconJourneymen from "../images/icon-raven/journeymen.png";
+import iconGearUpgrade from "../images/icon-raven/gear-upgrade.png";
+import iconNegotiators from "../images/icon-raven/negotiators.png";
+import iconExoticGoods from "../images/icon-raven/exotic-goods.png";
+
+// Wolf
+import iconFieldRations from "../images/icon-wolf/field-rations.png";
+import iconSpoilsOfWar from "../images/icon-wolf/spoils-of-war.png";
+import iconPlunder from "../images/icon-wolf/plunder.png";
+import iconConqueror from "../images/icon-wolf/conqueror.png";
+import iconVeiledThreats from "../images/icon-wolf/veiled-threats.png";
+
+// Bear
+import iconHibernation from "../images/icon-bear/hibernation.png";
+import iconHarpoons from "../images/icon-bear/harpoons.png";
+import iconProtectorOfTheLand from "../images/icon-bear/protector-of-the-land.png";
+import iconShieldMastery from "../images/icon-bear/shield-mastery.png";
+import iconWinterFestival from "../images/icon-bear/winter-festival.png";
+
+// Boar
+import iconSimpleLiving from "../images/icon-boar/simple-living.png";
+import iconHerbalism from "../images/icon-boar/herbalism.png";
+import iconLegacy from "../images/icon-boar/legacy.png";
+import iconLayOfTheLand from "../images/icon-boar/lay-of-the-land.png";
+import iconBartering from "../images/icon-boar/bartering.png";
+import iconHandiwork from "../images/icon-boar/handiwork.png";
+import iconOsmosis from "../images/icon-boar/osmosis.png";
+
+// Next
+// import icon from "../images/icon-/.png";
+// import icon from "../images/icon-/.png";
+// import icon from "../images/icon-/.png";
+// import icon from "../images/icon-/.png";
+// import icon from "../images/icon-/.png";
+
 // Blessings
 import iconFreyasBlessing from "../images/icon-common/blessing-baldr.png";
 import iconBaldrsBlessing from "../images/icon-common/blessing-freya.png";
@@ -109,6 +146,58 @@ export default function iconResolver(name) {
       return iconBarricades;
     case "Food Trade":
       return iconFoodTrade;
+
+    // Raven
+    case "Rangers":
+      return iconRangers;
+    case "Journeymen":
+      return iconJourneymen;
+    case "Gear Upgrade":
+      return iconGearUpgrade;
+    case "Negotiators":
+      return iconNegotiators;
+    case "Exotic Goods":
+      return iconExoticGoods;
+
+    // Wolf
+    case "Field Rations":
+      return iconFieldRations;
+    case "Spoils Of War":
+      return iconSpoilsOfWar;
+    case "Plunder":
+      return iconPlunder;
+    case "Conqueror":
+      return iconConqueror;
+    case "Veiled Threats":
+      return iconVeiledThreats;
+
+    // Bear
+    case "Hibernation":
+      return iconHibernation;
+    case "Harpoons":
+      return iconHarpoons;
+    case "Protector Of The Land":
+      return iconProtectorOfTheLand;
+    case "Shield Mastery":
+      return iconShieldMastery;
+    case "Winter Festival":
+      return iconWinterFestival;
+
+    // Boar
+    case "Simple Living":
+      return iconSimpleLiving;
+    case "Herbalism":
+      return iconHerbalism;
+    case "Legacy":
+      return iconLegacy;
+    case "Lay Of The Land":
+      return iconLayOfTheLand;
+    case "Bartering":
+      return iconBartering;
+    case "Handiwork":
+      return iconHandiwork;
+    case "Osmosis":
+      return iconOsmosis;
 
     // Blessings
     case "Freya's Blessing":
