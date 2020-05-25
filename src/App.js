@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Link,
+  Redirect,
   Route,
   Switch,
   useParams,
@@ -24,6 +25,7 @@ import loreKraken from "./clans/0320-kraken";
 import loreOx from "./clans/0320-ox";
 
 import iconLore from "./images/icon-lore.png";
+
 import "./App.css";
 
 const CLANS = {
@@ -50,8 +52,10 @@ function RouterWrapper() {
           Northgard Lore Planner
         </h1>
         <Switch>
-          {/* <Route exact path="/"><Redirect to=""/></Route> */}
-          <Route exact path={["", "/:hash"]}>
+          <Route exact path="/">
+            <Redirect to="/Stag/" />
+          </Route>
+          <Route exact path="/:clan/:hash?">
             <App />
           </Route>
         </Switch>
@@ -61,8 +65,8 @@ function RouterWrapper() {
 }
 
 function App() {
-  const { hash = "" } = useParams();
-  const [selectedClan, setSelectedClan] = useState("Stag");
+  const { clan, hash = "" } = useParams();
+  const [selectedClan, setSelectedClan] = useState(clan);
   const [selectedLores, setSelectedLores] = useState([]);
 
   // Initialize lore build from url
@@ -93,6 +97,7 @@ function App() {
       <select
         onChange={(e) => {
           setSelectedClan(e.currentTarget.value);
+          setSelectedLores([]);
         }}
         value={selectedClan}
       >
@@ -131,7 +136,10 @@ function App() {
         selectedLores={selectedLores}
       />
       <div style={{ display: "flex" }}>
-        <Link className="button" to={`/${selectedLores.join("")}`}>
+        <Link
+          className="button"
+          to={`/${selectedClan}/${selectedLores.join("")}`}
+        >
           Save
         </Link>
         <button
