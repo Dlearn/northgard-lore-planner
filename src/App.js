@@ -1,4 +1,11 @@
 import React, { useEffect, useState } from "react";
+import {
+  BrowserRouter as Router,
+  Link,
+  Route,
+  Switch,
+  useParams,
+} from "react-router-dom";
 
 import BlessingRow from "./components/BlessingRow";
 import LoreRow from "./components/LoreRow";
@@ -34,20 +41,39 @@ const CLANS = {
   Ox: loreOx,
 };
 
+function RouterWrapper() {
+  return (
+    <Router>
+      <div className="body">
+        <h1>
+          <img alt="Icon lore" className="iconLore" src={iconLore} />
+          Northgard Lore Planner
+        </h1>
+        <Switch>
+          {/* <Route exact path="/"><Redirect to=""/></Route> */}
+          <Route exact path={["", "/:hash"]}>
+            <App />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
+}
+
 function App() {
+  const { hash = "" } = useParams();
   const [selectedClan, setSelectedClan] = useState("Stag");
   const [selectedLores, setSelectedLores] = useState([]);
 
   // Initialize lore build from url
   useEffect(() => {
-    const cleanedPathname = window.location.pathname.substr(1);
-    const lores = cleanedPathname.match(/.{1,2}/g);
+    const lores = hash.match(/.{1,2}/g);
     if (lores) {
       setSelectedLores(lores);
     } else {
       setSelectedLores([]);
     }
-  }, []);
+  }, [hash]);
 
   const lore = CLANS[selectedClan];
 
@@ -63,11 +89,7 @@ function App() {
   };
 
   return (
-    <div className="body">
-      <h1>
-        <img alt="Icon lore" className="iconLore" src={iconLore} />
-        Northgard Lore Planner
-      </h1>
+    <>
       <select
         onChange={(e) => {
           setSelectedClan(e.currentTarget.value);
@@ -109,9 +131,9 @@ function App() {
         selectedLores={selectedLores}
       />
       <div style={{ display: "flex" }}>
-        <a className="button" href={`/${selectedLores.join("")}`}>
+        <Link className="button" to={`/${selectedLores.join("")}`}>
           Save
-        </a>
+        </Link>
         <button
           className="button"
           onClick={() => {
@@ -121,8 +143,8 @@ function App() {
           Reset
         </button>
       </div>
-    </div>
+    </>
   );
 }
 
-export default App;
+export default RouterWrapper;
