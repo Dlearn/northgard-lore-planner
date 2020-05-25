@@ -11,7 +11,16 @@ function BlessingRow(props) {
     return selectedLore.charAt(0) !== "6";
   }).length;
   const countSelectedBlessings = selectedLores.length - countSelectedLores;
-  const countAllowedBlessings = Math.floor(countSelectedLores / 6);
+  let countAllowedBlessings;
+  if (countSelectedLores >= 12) {
+    countAllowedBlessings = 3;
+  } else if (countSelectedLores >= 9) {
+    countAllowedBlessings = 2;
+  } else if (countSelectedLores >= 6) {
+    countAllowedBlessings = 1;
+  } else {
+    countAllowedBlessings = 0;
+  }
   const position0 = selectedLores.indexOf("60");
   const position1 = selectedLores.indexOf("61");
   const position2 = selectedLores.indexOf("62");
