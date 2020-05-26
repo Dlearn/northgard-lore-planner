@@ -10,7 +10,7 @@ export default [
   ],
   [
     "Weaponsmith",
-    "Protector Of The Land",
+    "Protector of the Land",
     "Defensive Strategy",
     "Shield Mastery",
     "Feeling Safe",

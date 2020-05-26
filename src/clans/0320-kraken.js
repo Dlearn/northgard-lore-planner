@@ -9,7 +9,7 @@ export default [
     "Shiny Happy People",
   ],
   [
-    "Endless Tale",
+    "Endless Tide",
     "Fur Coats",
     "Defensive Strategy",
     "Military Strategy",
@@ -19,7 +19,7 @@ export default [
   ],
   [
     "Mining Efficiency",
-    "Knowledge From Beyond",
+    "Knowledge from Beyond",
     "Near The Sea Spirit",
     "Erudition",
     "Carpentry Mastery",

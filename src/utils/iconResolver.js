@@ -154,13 +154,13 @@ export default function iconResolver(name) {
     // Stag
     case "Food Preservation":
       return iconFoodPreservation;
-    case "Glory Of The Clan":
+    case "Glory of the Clan":
       return iconGloryOfTheClan;
     case "Hero Emblem":
       return iconHeroEmblem;
-    case "The Value Of Great Deeds":
+    case "The Value of Great Deeds":
       return iconTheValueOfGreatDeeds;
-    case "Young And Proud":
+    case "Young and Proud":
       return iconYoungAndProud;
 
     // Goat
@@ -190,7 +190,7 @@ export default function iconResolver(name) {
     // Wolf
     case "Field Rations":
       return iconFieldRations;
-    case "Spoils Of War":
+    case "Spoils of War":
       return iconSpoilsOfWar;
     case "Plunder":
       return iconPlunder;
@@ -204,7 +204,7 @@ export default function iconResolver(name) {
       return iconHibernation;
     case "Harpoons":
       return iconHarpoons;
-    case "Protector Of The Land":
+    case "Protector of the Land":
       return iconProtectorOfTheLand;
     case "Shield Mastery":
       return iconShieldMastery;
@@ -218,7 +218,7 @@ export default function iconResolver(name) {
       return iconHerbalism;
     case "Legacy":
       return iconLegacy;
-    case "Lay Of The Land":
+    case "Lay of the Land":
       return iconLayOfTheLand;
     case "Bartering":
       return iconBartering;
@@ -260,7 +260,7 @@ export default function iconResolver(name) {
       return iconMetalcraft;
     case "Excavation":
       return iconExcavation;
-    case "Quality Of Life":
+    case "Quality of Life":
       return iconQualityOfLife;
 
     // Kraken
@@ -270,7 +270,7 @@ export default function iconResolver(name) {
       return iconFreshFish;
     case "Endless Tide":
       return iconEndlessTide;
-    case "Knowledge From Beyond":
+    case "Knowledge from Beyond":
       return iconKnowledgeFromBeyond;
     case "Near The Sea Spirit":
       return iconNearTheSeaSpirit;

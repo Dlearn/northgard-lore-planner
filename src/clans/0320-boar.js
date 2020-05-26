@@ -18,7 +18,7 @@ export default [
     "Monster Slayer",
   ],
   [
-    "Lay Of The Land",
+    "Lay of the Land",
     "Shipbuilding",
     "Bartering",
     "Erudition",

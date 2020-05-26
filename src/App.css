@@ -69,6 +69,26 @@
   cursor: not-allowed;
 }
 
+.lore + p {
+  position: absolute;
+  z-index: 1;
+  width: 300px;
+  height: auto;
+  top: 100%;
+  left: 50%;
+  padding: 5px;
+  margin-left: -150px;
+  visibility: hidden;
+  background-color: #121e2a;
+  color: #c0c2c6;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.lore:hover + p {
+  visibility: visible;
+}
+
 .title {
   color: white;
   font-size: 0.75rem;

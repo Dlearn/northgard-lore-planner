@@ -2,6 +2,8 @@ import React from "react";
 
 import SelectedIcon from "../SelectedIcon";
 
+import descriptionsLores from "../../descriptions/lores.json";
+
 import iconResolver from "../../utils/iconResolver";
 
 import "../../App.css";
@@ -31,15 +33,18 @@ function Lore(props) {
   };
 
   return (
-    <button className="lore" disabled={disabled} onClick={onClickLore}>
-      <div className="background-icon">
-        <img alt={title} src={iconResolver(title)} />
-      </div>
-      <div className="background-title">
-        <span className="title">{title}</span>
-      </div>
-      {selected && <SelectedIcon number={positionInLores + 1} />}
-    </button>
+    <div style={{ position: "relative" }}>
+      <button className="lore" disabled={disabled} onClick={onClickLore}>
+        <div className="background-icon">
+          <img alt={title} src={iconResolver(title)} />
+        </div>
+        <div className="background-title">
+          <span className="title">{title}</span>
+        </div>
+        {selected && <SelectedIcon number={positionInLores + 1} />}
+      </button>
+      <p>{descriptionsLores[title]}</p>
+    </div>
   );
 }
 

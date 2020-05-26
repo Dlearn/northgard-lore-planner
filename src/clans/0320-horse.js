@@ -23,7 +23,7 @@ export default [
     "Coinage",
     "Excavation",
     "Carpentry Mastery",
-    "Quality Of Life",
+    "Quality of Life",
     "Trading Caravan",
   ],
 ];
