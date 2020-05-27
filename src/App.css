@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   color: white;
-  background: #282c34;
+  background: #152330;
   height: 100vh;
 }
 
@@ -123,6 +123,10 @@
   color: white;
   font-size: 0.75rem;
   padding-right: 28px;
+}
+
+.title.selected {
+  color: #fac75e;
 }
 
 .selectedIcon {

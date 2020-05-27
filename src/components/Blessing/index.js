@@ -53,7 +53,7 @@ function Blessing(props) {
           <img alt={title} className="iconBlessing" src={iconResolver(title)} />
         </div>
         <div className={backgroundTitleClassName}>
-          <span className="title">{title}</span>
+          <span className={selected ? "title selected" : "title"}>{title}</span>
         </div>
         {selected && <SelectedIcon number={positionInLores + 1} />}
       </button>
