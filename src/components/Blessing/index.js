@@ -35,15 +35,27 @@ function Blessing(props) {
   return (
     <div style={{ position: "relative" }}>
       <button className="lore" disabled={disabled} onClick={onClickLore}>
-        <div className="background-icon">
+        <div
+          className={
+            selected
+              ? "background-icon-blessing selected"
+              : "background-icon-blessing"
+          }
+        >
           <img alt={title} className="iconBlessing" src={iconResolver(title)} />
         </div>
-        <div className="background-title">
+        <div
+          className={
+            selected
+              ? "background-title blessing selected"
+              : "background-title blessing"
+          }
+        >
           <span className="title">{title}</span>
         </div>
         {selected && <SelectedIcon number={positionInLores + 1} />}
       </button>
-      <p>{descriptionsBlessings[title]}</p>
+      <p className="description">{descriptionsBlessings[title]}</p>
     </div>
   );
 }

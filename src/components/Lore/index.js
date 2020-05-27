@@ -35,7 +35,7 @@ function Lore(props) {
   return (
     <div style={{ position: "relative" }}>
       <button className="lore" disabled={disabled} onClick={onClickLore}>
-        <div className="background-icon">
+        <div className="background-icon-lore">
           <img alt={title} src={iconResolver(title)} />
         </div>
         <div className="background-title">
@@ -43,7 +43,7 @@ function Lore(props) {
         </div>
         {selected && <SelectedIcon number={positionInLores + 1} />}
       </button>
-      <p>{descriptionsLores[title]}</p>
+      <p className="description">{descriptionsLores[title]}</p>
     </div>
   );
 }

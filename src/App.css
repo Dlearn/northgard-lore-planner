@@ -39,11 +39,11 @@
   background-image: url("./images/background/background-leaf.png");
 }
 
-.background-icon {
+.background-icon-lore {
   width: 42px;
   height: 42px;
   padding: 3px;
-  background: url("./images/background/background-icon.png") no-repeat;
+  background: url("./images/background/background-icon-lore.png") no-repeat;
 }
 
 .background-title {
@@ -53,6 +53,30 @@
   width: 151px;
   height: 32px;
   background: url("./images/background/background-title.png") no-repeat;
+}
+
+.background-title.blessing {
+  margin-left: -3px;
+}
+
+.background-title.selected {
+  margin-left: -3px;
+  background: url("./images/background/background-title-blessing-selected.png")
+    no-repeat;
+}
+
+.background-icon-blessing {
+  width: 42px;
+  height: 42px;
+  padding: 3px;
+  background: url("./images/background/background-icon-blessing-unselected.svg")
+    no-repeat;
+  z-index: 1;
+}
+
+.background-icon-blessing.selected {
+  background: url("./images/background/background-icon-blessing-selected.svg")
+    no-repeat;
 }
 
 .lore {
@@ -71,7 +95,7 @@
 
 .lore + p {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   width: 300px;
   height: auto;
   top: 100%;
