@@ -32,25 +32,27 @@ function Blessing(props) {
     }
   };
 
+  let backgroundTitleClassName;
+  if (selected) {
+    backgroundTitleClassName = "background-title blessing selected";
+  } else if (enabled) {
+    backgroundTitleClassName = "background-title blessing enabled";
+  } else {
+    backgroundTitleClassName = "background-title blessing";
+  }
   return (
     <div style={{ position: "relative" }}>
       <button className="lore" disabled={disabled} onClick={onClickLore}>
         <div
           className={
-            selected
+            enabled || selected
               ? "background-icon-blessing selected"
               : "background-icon-blessing"
           }
         >
           <img alt={title} className="iconBlessing" src={iconResolver(title)} />
         </div>
-        <div
-          className={
-            selected
-              ? "background-title blessing selected"
-              : "background-title blessing"
-          }
-        >
+        <div className={backgroundTitleClassName}>
           <span className="title">{title}</span>
         </div>
         {selected && <SelectedIcon number={positionInLores + 1} />}

@@ -59,9 +59,15 @@
   margin-left: -3px;
 }
 
-.background-title.selected {
+.background-title.blessing.selected {
   margin-left: -3px;
   background: url("./images/background/background-title-blessing-selected.png")
+    no-repeat;
+}
+
+.background-title.blessing.enabled {
+  margin-left: -3px;
+  background: url("./images/background/background-title-blessing-enabled.png")
     no-repeat;
 }
 
