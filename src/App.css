@@ -50,8 +50,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 151px;
-  height: 32px;
+  width: 152px;
+  height: 34px;
   background: url("./images/background/background-title.png") no-repeat;
 }
 
@@ -66,8 +66,6 @@
 }
 
 .background-title.blessing.enabled {
-  width: 152px;
-  height: 34px;
   margin-left: -3px;
   background: url("./images/background/background-title-blessing-enabled.png")
     no-repeat;
