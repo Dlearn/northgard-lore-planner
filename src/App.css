@@ -66,6 +66,8 @@
 }
 
 .background-title.blessing.enabled {
+  width: 152px;
+  height: 34px;
   margin-left: -3px;
   background: url("./images/background/background-title-blessing-enabled.png")
     no-repeat;
