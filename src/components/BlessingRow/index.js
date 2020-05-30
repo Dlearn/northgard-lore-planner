@@ -5,7 +5,7 @@ import Selectable from "../Selectable";
 import styles from "./styles.module.css";
 
 function BlessingRow(props) {
-  const { onDeselectLore, onSelectLore, selectedLores } = props;
+  const { isDesktop, onDeselectLore, onSelectLore, selectedLores } = props;
 
   const countSelectedLores = selectedLores.filter((selectedLore) => {
     return selectedLore.charAt(0) !== "6";
@@ -25,8 +25,13 @@ function BlessingRow(props) {
   const position1 = selectedLores.indexOf("61");
   const position2 = selectedLores.indexOf("62");
 
+  console.log({ isDesktop });
   return (
-    <div className={styles.blessingRow}>
+    <div
+      className={
+        isDesktop ? styles.blessingRowDesktop : styles.blessingRowMobile
+      }
+    >
       <Selectable
         coordinatesRowCol={[6, 0]}
         enabled={countAllowedBlessings - countSelectedBlessings > 0}

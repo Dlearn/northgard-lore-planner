@@ -1,12 +1,5 @@
-import React, { useEffect, useState } from "react";
-import {
-  BrowserRouter as Router,
-  Link,
-  Redirect,
-  Route,
-  Switch,
-  useParams,
-} from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
+import { Link, useParams } from "react-router-dom";
 
 import BlessingRow from "./components/BlessingRow";
 import LoreRow from "./components/LoreRow";
@@ -23,8 +16,6 @@ import loreDragon from "./clans/0320-dragon";
 import loreHorse from "./clans/0320-horse";
 import loreKraken from "./clans/0320-kraken";
 import loreOx from "./clans/0320-ox";
-
-import iconLore from "./images/icon-lore.png";
 
 import styles from "./styles.module.css";
 
@@ -43,31 +34,11 @@ const CLANS = {
   Ox: loreOx,
 };
 
-function RouterWrapper() {
-  return (
-    <Router>
-      <div className={styles.app}>
-        <h1>
-          <img alt="Icon lore" className={styles.iconLore} src={iconLore} />
-          Northgard Lore Planner
-        </h1>
-        <Switch>
-          <Route exact path="/">
-            <Redirect to="/Stag/" />
-          </Route>
-          <Route exact path="/:clan/:hash?">
-            <App />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
-}
-
 function App() {
   const { clan, hash = "" } = useParams();
   const [selectedClan, setSelectedClan] = useState(clan);
   const [selectedLores, setSelectedLores] = useState([]);
+  const isDesktopRef = useRef(window.innerWidth >= 800);
 
   // Initialize lore build from url
   useEffect(() => {
@@ -95,6 +66,7 @@ function App() {
   return (
     <>
       <select
+        className={styles.select}
         onChange={(e) => {
           setSelectedClan(e.currentTarget.value);
           setSelectedLores([]);
@@ -107,7 +79,7 @@ function App() {
           </option>
         ))}
       </select>
-      <div>
+      <div className={isDesktopRef.current ? "" : styles.mobileOverflow}>
         <LoreRow
           loreRow={lore[0]}
           onDeselectLore={onDeselectLore}
@@ -131,6 +103,7 @@ function App() {
         />
       </div>
       <BlessingRow
+        isDesktop={isDesktopRef.current}
         onDeselectLore={onDeselectLore}
         onSelectLore={onSelectLore}
         selectedLores={selectedLores}
@@ -155,4 +128,4 @@ function App() {
   );
 }
 
-export default RouterWrapper;
+export default App;

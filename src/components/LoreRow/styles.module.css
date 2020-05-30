@@ -1,4 +1,5 @@
 .backgroundPanel {
+  flex: 0 0 auto;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;

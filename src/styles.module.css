@@ -3,17 +3,29 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
-  height: 100vh;
 }
 
 .app > * {
   margin-bottom: 12px;
 }
 
+.heading {
+  color: white;
+  padding: 0 16px;
+}
+
 .iconLore {
   width: 24px;
   margin-right: 8px;
+}
+
+.select {
+  width: 180px;
+}
+
+.mobileOverflow {
+  overflow: scroll;
+  width: 100%;
 }
 
 .button {

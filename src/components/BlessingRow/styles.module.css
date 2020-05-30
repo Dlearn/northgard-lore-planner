@@ -1,5 +1,10 @@
-.blessingRow {
+.blessingRowDesktop {
   display: flex;
+}
+
+.blessingRowMobile {
+  display: flex;
+  flex-flow: column;
 }
 
 .blessingRow > * {
