@@ -26,7 +26,7 @@ import loreOx from "./clans/0320-ox";
 
 import iconLore from "./images/icon-lore.png";
 
-import "./App.css";
+import styles from "./styles.module.css";
 
 const CLANS = {
   Common: loreCommon,
@@ -46,9 +46,9 @@ const CLANS = {
 function RouterWrapper() {
   return (
     <Router>
-      <div className="body">
+      <div className={styles.app}>
         <h1>
-          <img alt="Icon lore" className="iconLore" src={iconLore} />
+          <img alt="Icon lore" className={styles.iconLore} src={iconLore} />
           Northgard Lore Planner
         </h1>
         <Switch>
@@ -137,13 +137,13 @@ function App() {
       />
       <div style={{ display: "flex" }}>
         <Link
-          className="button"
+          className={styles.button}
           to={`/${selectedClan}/${selectedLores.join("")}`}
         >
           Save
         </Link>
         <button
-          className="button"
+          className={styles.button}
           onClick={() => {
             setSelectedLores([]);
           }}

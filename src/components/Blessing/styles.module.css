@@ -1,0 +1,18 @@
+.backgroundIconBlessing {
+  width: 42px;
+  height: 42px;
+  padding: 3px;
+  background: url("../../images/background/background-icon-blessing-unselected.svg")
+    no-repeat;
+  z-index: 1;
+}
+
+.backgroundIconBlessing.selected {
+  background: url("../../images/background/background-icon-blessing-selected.svg")
+    no-repeat;
+}
+
+.iconBlessing {
+  width: 42px;
+  height: 42px;
+}

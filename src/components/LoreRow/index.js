@@ -1,8 +1,8 @@
 import React from "react";
 
-import Lore from "../Lore";
+import Selectable from "../Selectable";
 
-import "../../App.css";
+import styles from "./styles.module.css";
 
 function LoreRow(props) {
   const { loreRow, onDeselectLore, onSelectLore, row, selectedLores } = props;
@@ -20,10 +20,11 @@ function LoreRow(props) {
 
   return (
     <div style={{ display: "flex" }}>
-      <div className="background background-root">
-        <Lore
+      <div className={`${styles.backgroundPanel} ${styles.backgroundRoot}`}>
+        <Selectable
           coordinatesRowCol={[row, 0]}
           enabled // Enabled by default
+          isLore
           onDeselectLore={onDeselectLore}
           onSelectLore={onSelectLore}
           positionInLores={position0}
@@ -31,19 +32,21 @@ function LoreRow(props) {
           title={loreRow[0]}
         />
       </div>
-      <div className="background background-branch">
-        <Lore
+      <div className={`${styles.backgroundPanel} ${styles.backgroundBranch}`}>
+        <Selectable
           coordinatesRowCol={[row, 1]}
           enabled={isCol0Selected}
+          isLore
           onDeselectLore={onDeselectLore}
           onSelectLore={onSelectLore}
           positionInLores={position1}
           selectedLores={selectedLores}
           title={loreRow[1]}
         />
-        <Lore
+        <Selectable
           coordinatesRowCol={[row + 1, 1]}
           enabled={isCol0Selected}
+          isLore
           onDeselectLore={onDeselectLore}
           onSelectLore={onSelectLore}
           positionInLores={position2}
@@ -51,19 +54,21 @@ function LoreRow(props) {
           title={loreRow[2]}
         />
       </div>
-      <div className="background background-branch">
-        <Lore
+      <div className={`${styles.backgroundPanel} ${styles.backgroundBranch}`}>
+        <Selectable
           coordinatesRowCol={[row, 2]}
           enabled={isCol1Selected}
+          isLore
           onDeselectLore={onDeselectLore}
           onSelectLore={onSelectLore}
           positionInLores={position3}
           selectedLores={selectedLores}
           title={loreRow[3]}
         />
-        <Lore
+        <Selectable
           coordinatesRowCol={[row + 1, 2]}
           enabled={isCol1Selected}
+          isLore
           onDeselectLore={onDeselectLore}
           onSelectLore={onSelectLore}
           positionInLores={position4}
@@ -71,19 +76,21 @@ function LoreRow(props) {
           title={loreRow[4]}
         />
       </div>
-      <div className="background background-leaf">
-        <Lore
+      <div className={`${styles.backgroundPanel} ${styles.backgroundLeaf}`}>
+        <Selectable
           coordinatesRowCol={[row, 3]}
           enabled={isCol2Selected}
+          isLore
           onDeselectLore={onDeselectLore}
           onSelectLore={onSelectLore}
           positionInLores={position5}
           selectedLores={selectedLores}
           title={loreRow[5]}
         />
-        <Lore
+        <Selectable
           coordinatesRowCol={[row + 1, 3]}
           enabled={isCol2Selected}
+          isLore
           onDeselectLore={onDeselectLore}
           onSelectLore={onSelectLore}
           positionInLores={position6}

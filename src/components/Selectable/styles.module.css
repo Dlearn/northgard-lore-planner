@@ -1,0 +1,68 @@
+.backgroundTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 152px;
+  height: 34px;
+  background: url("../../images/background/background-title.png") no-repeat;
+}
+
+.backgroundTitle.blessing {
+  margin-left: -3px;
+}
+
+.backgroundTitle.blessing.selected {
+  margin-left: -3px;
+  background: url("../../images/background/background-title-blessing-selected.png")
+    no-repeat;
+}
+
+.backgroundTitle.blessing.enabled {
+  margin-left: -3px;
+  background: url("../../images/background/background-title-blessing-enabled.png")
+    no-repeat;
+}
+
+.selectable {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.selectable:disabled {
+  cursor: not-allowed;
+}
+
+.selectable + p {
+  position: absolute;
+  z-index: 2;
+  width: 300px;
+  height: auto;
+  top: 100%;
+  left: 50%;
+  padding: 5px;
+  margin-left: -150px;
+  visibility: hidden;
+  background-color: #121e2a;
+  color: #c0c2c6;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.selectable:hover + p {
+  visibility: visible;
+}
+
+.title {
+  color: white;
+  font-size: 0.75rem;
+  padding-right: 28px;
+}
+
+.title.selected {
+  color: #fac75e;
+}

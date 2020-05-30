@@ -1,0 +1,21 @@
+.backgroundPanel {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 266px;
+  height: 140px;
+  margin-left: -9px;
+}
+
+.backgroundRoot {
+  background-image: url("../../images/background/background-root.png");
+}
+
+.backgroundBranch {
+  background-image: url("../../images/background/background-branch.png");
+}
+
+.backgroundLeaf {
+  background-image: url("../../images/background/background-leaf.png");
+}

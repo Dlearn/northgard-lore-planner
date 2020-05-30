@@ -1,8 +1,8 @@
 import React from "react";
 
-import Blessing from "../Blessing";
+import Selectable from "../Selectable";
 
-import "../../App.css";
+import styles from "./styles.module.css";
 
 function BlessingRow(props) {
   const { onDeselectLore, onSelectLore, selectedLores } = props;
@@ -26,8 +26,8 @@ function BlessingRow(props) {
   const position2 = selectedLores.indexOf("62");
 
   return (
-    <div className="blessingRow">
-      <Blessing
+    <div className={styles.blessingRow}>
+      <Selectable
         coordinatesRowCol={[6, 0]}
         enabled={countAllowedBlessings - countSelectedBlessings > 0}
         onDeselectLore={onDeselectLore}
@@ -36,7 +36,7 @@ function BlessingRow(props) {
         selectedLores={selectedLores}
         title="Freya's Blessing"
       />
-      <Blessing
+      <Selectable
         coordinatesRowCol={[6, 1]}
         enabled={countAllowedBlessings - countSelectedBlessings > 0}
         onDeselectLore={onDeselectLore}
@@ -45,7 +45,7 @@ function BlessingRow(props) {
         selectedLores={selectedLores}
         title="Baldr's Blessing"
       />
-      <Blessing
+      <Selectable
         coordinatesRowCol={[6, 2]}
         enabled={countAllowedBlessings - countSelectedBlessings > 0}
         onDeselectLore={onDeselectLore}

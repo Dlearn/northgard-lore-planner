@@ -1,0 +1,7 @@
+.blessingRow {
+  display: flex;
+}
+
+.blessingRow > * {
+  margin: 0 8px;
+}

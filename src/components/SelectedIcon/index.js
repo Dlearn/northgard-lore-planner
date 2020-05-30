@@ -1,9 +1,11 @@
 import React from "react";
 
+import styles from "./styles.module.css";
+
 function SelectedIcon({ number }) {
   return (
-    <div className="selectedIcon">
-      <h1 className="selectedText">{number}</h1>
+    <div className={styles.selectedIcon}>
+      <h1 className={styles.selectedText}>{number}</h1>
     </div>
   );
 }

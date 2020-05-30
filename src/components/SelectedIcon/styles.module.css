@@ -1,0 +1,14 @@
+.selectedIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -12px;
+  width: 48px;
+  height: 48px;
+  background-image: url("../../images/selected.svg");
+}
+
+.selectedText {
+  color: white;
+}
