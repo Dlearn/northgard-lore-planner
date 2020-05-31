@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import ReactGA from "react-ga";
 import { Link, useParams } from "react-router-dom";
 
 import BlessingRow from "./components/BlessingRow";
@@ -34,21 +35,27 @@ const CLANS = {
   Ox: loreOx,
 };
 
+const gaTrackingId = "UA-167763709-1";
+
 function App() {
   const { clan, hash = "" } = useParams();
   const [selectedClan, setSelectedClan] = useState(clan);
   const [selectedLores, setSelectedLores] = useState([]);
   const isDesktopRef = useRef(window.innerWidth >= 800);
 
-  // Initialize lore build from url
   useEffect(() => {
+    // Initialize Google Analytics
+    ReactGA.initialize(gaTrackingId);
+    ReactGA.pageview(clan);
+
+    // Initialize lore build from url
     const lores = hash.match(/.{1,2}/g);
     if (lores) {
       setSelectedLores(lores);
     } else {
       setSelectedLores([]);
     }
-  }, [hash]);
+  }, [clan, hash]);
 
   const lore = CLANS[selectedClan];
 
