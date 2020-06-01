@@ -25,7 +25,6 @@ function BlessingRow(props) {
   const position1 = selectedLores.indexOf("61");
   const position2 = selectedLores.indexOf("62");
 
-  console.log({ isDesktop });
   return (
     <div
       className={
