@@ -22,7 +22,7 @@ export default [
     "Shipbuilding",
     "Bartering",
     "Erudition",
-    "Carpentry Mastery",
+    "Handiwork",
     "Negotiation",
     "Osmosis",
   ],
