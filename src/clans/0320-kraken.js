@@ -19,8 +19,8 @@ export default [
   ],
   [
     "Mining Efficiency",
-    "Knowledge from Beyond",
     "Near The Sea Spirit",
+    "Knowledge from Beyond",
     "Erudition",
     "Carpentry Mastery",
     "Negotiation",
